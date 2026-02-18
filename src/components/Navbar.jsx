@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button, Container, Avatar, Box } from '@mui/material';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../context/AuthContext.jsx';
 import ErrorIcon from '@mui/icons-material/Error';
 
 const Navbar = () => {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Typography, Box, Grid } from '@mui/material';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
-import ProductList from './ProductList';
+import ProductList from './ProductList.jsx';
 
 const Home = () => {
     const [isLoading, setIsLoading] = useState(true);

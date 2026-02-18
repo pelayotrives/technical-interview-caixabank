@@ -11,6 +11,9 @@ export default defineConfig({
   build: {
     outDir: 'build'
   },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json']
+  },
   test: {
     globals: true,
     environment: 'jsdom',

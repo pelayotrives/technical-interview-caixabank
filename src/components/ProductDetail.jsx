@@ -8,7 +8,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Typography, Box, CircularProgress } from '@mui/material';
-import { useProducts } from '../context/ProductContext';
+import { useProducts } from '../context/ProductContext.jsx';
 import InfoIcon from '@mui/icons-material/Info';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 

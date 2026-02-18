@@ -3,15 +3,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CssBaseline, AppBar, Container, Box, Typography } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
-import { ProductProvider } from './context/ProductContext';
-import { AuthProvider } from './context/AuthContext';
-import withAuth from './hoc/withAuth';
+import { ProductProvider } from './context/ProductContext.jsx';
+import { AuthProvider } from './context/AuthContext.jsx';
+import withAuth from './hoc/withAuth.jsx';
 
 // Lazy loading components using React.lazy
-const Home = lazy(() => import('./components/Home'));
-const Login = lazy(() => import('./components/Login'));
-const Navbar = lazy(() => import('./components/Navbar'));
-const ProductDetail = lazy(() => import('./components/ProductDetail'));
+const Home = lazy(() => import('./components/Home.jsx'));
+const Login = lazy(() => import('./components/Login.jsx'));
+const Navbar = lazy(() => import('./components/Navbar.jsx'));
+const ProductDetail = lazy(() => import('./components/ProductDetail.jsx'));
 
 const WrappedProductDetail = withAuth(ProductDetail);
 

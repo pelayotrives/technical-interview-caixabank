@@ -21,6 +21,7 @@ Expected solution time ➡️  2 hours. **It is essential to complete your solut
 ## 📂 Repository Structure
 
 A repository tree is provided below and should not be modified. Everything you need to develop the challenge is already included.
+
 ```bash
 nuwe-frontend-js-react2/
 ├── package.json
@@ -59,6 +60,7 @@ nuwe-frontend-js-react2/
     ├── tests
     └── theme.js
 ```
+
 **It is necessary to modify only the files proposed in the tasks.**
 
 ## 🎯 Tasks
@@ -77,7 +79,7 @@ The tasks are the following:
    2. **Form Submission Behavior**:
       - When the form is submitted, it should call the `login` function with the provided username and password.
       - After a successful login, the user should be navigated to the home page.
-   - File: [Login.js](src/components/Login.js)
+  - File: [Login.js](src/components/Login.js)
 
 - **Task 2**: The `Product` component displays product information. This component should:
 
@@ -86,7 +88,7 @@ The tasks are the following:
 
    2. **Navigation on Button Click**:
       - Clicking the "More Information" button should navigate to the product's detailed page.
-   - File: [Product.js](src/components/Product.js)
+  - File: [Product.js](src/components/Product.js)
 
 - **Task 3**: The `ProductDetail` component shows detailed information about a product. This component should:
 
@@ -98,7 +100,7 @@ The tasks are the following:
 
    3. **Display Product Details**:
       - Display the product's details when the product is found.
-   - File: [ProductDetail.js](src/components/ProductDetail.js)
+  - File: [ProductDetail.js](src/components/ProductDetail.js)
 
 - **Task 4**: The `ProductList` component displays a list of products. This component should:
 
@@ -107,17 +109,18 @@ The tasks are the following:
 
    2. **Display Products**:
       - Display a list of products when `isLoading` is false.
-   - File: [ProductList.js](src/components/ProductList.js)
+  - File: [ProductList.js](src/components/ProductList.js)
 
 - **Task 5**: The `Home` component manages the application's home page. This component should:
 
    1. **Loading State Management**:
       - Set `isLoading` to false after 2 seconds.
-   - File: [Home.js](src/components/Home.js)
+  - File: [Home.js](src/components/Home.js)
 
 ## 💫 Guides
 
 Install project dependencies using npm:
+
 ```bash
 # You should be in the root directory
 npm install
@@ -125,8 +128,9 @@ npm install
 
 ### Execute the project
 
-This will launch the application in your default web browser. If it does not open automatically, you can access the application at http://localhost:3000.
-```bash 
+This will launch the application in your default web browser. If it does not open automatically, you can access the application at <http://localhost:3000>.
+
+```bash
 npm start
 ```
 
@@ -177,11 +181,11 @@ This project has been migrated from **Create React App** to **Vite** to resolve 
    - Removed `react-scripts` (unmaintained)
    - Added `vite` and `@vitejs/plugin-react`
    - Migrated tests to `vitest`
-   
+
 2. **File Structure**:
    - Moved `index.html` to the project root
    - Renamed all JSX files from `.js` to `.jsx` extension
-   
+
 3. **Scripts Updated**:
    - `npm run dev` - Start development server (previously `npm start`)
    - `npm run build` - Build for production

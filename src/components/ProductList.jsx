@@ -10,9 +10,9 @@
 
 // Import dependencies
 import React from 'react';
-import { useProducts } from '../context/ProductContext';
-import Product from './Product';
-import withLoading from '../hoc/withLoading';
+import { useProducts } from '../context/ProductContext.jsx';
+import Product from './Product.jsx';
+import withLoading from '../hoc/withLoading.jsx';
 import { Grid } from '@mui/material'; // Import Grid from Material-UI
 
 const ProductList = ({ isLoading }) => {
