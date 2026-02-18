@@ -157,3 +157,51 @@ Only the files proposed in the objectives should be modified. You are not allowe
 
 - **What happens if I modify files that are not in scope?** The correction will fail because those changes will not be taken into account.
 - **Can I add resources that are not in package.json?** No, everything needed to complete the challenge is included.
+
+---
+
+## 🔒 Security Improvements - Migration to Vite
+
+### Vulnerabilities Resolved
+
+This project has been migrated from **Create React App** to **Vite** to resolve critical security vulnerabilities that were present in the dependencies. Create React App is no longer actively maintained, and updating to Vite provides:
+
+- **0 security vulnerabilities** (previously 32+)
+- **Faster development server** and build times
+- **Modern tooling** with active maintenance
+- **Better performance** in both development and production
+
+### Changes Made
+
+1. **Dependencies Updated**:
+   - Removed `react-scripts` (unmaintained)
+   - Added `vite` and `@vitejs/plugin-react`
+   - Migrated tests to `vitest`
+   
+2. **File Structure**:
+   - Moved `index.html` to the project root
+   - Renamed all JSX files from `.js` to `.jsx` extension
+   
+3. **Scripts Updated**:
+   - `npm run dev` - Start development server (previously `npm start`)
+   - `npm run build` - Build for production
+   - `npm run preview` - Preview production build
+   - `npm test` - Run tests with Vitest
+
+### Running the Application
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Run tests
+npm test
+```
+
+All functionality remains the same - only the build tooling has been modernized!
